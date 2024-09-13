@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Form <img src="" alt=""></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Resume Form -->
+        <h2> Editable Resume Form !</h2>
+        <form id="resumeForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br>
+
+            <label for="education">Education:</label>
+            <input type="text" id="education" required><br>
+
+            <label for="workExperience">Work Experience:</label>
+            <input type="text" id="workExperience" required><br>
+
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills" required><br>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <!-- Display the Editable Resume -->
+        <h2>Generated Resume</h2>
+        <div id="editableResume" style="display: none;">
+            <h1 contenteditable="true" id="displayName"></h1>
+
+            <div contenteditable="true" id="displayEducation">
+                <h3>Education</h3>
+                <p></p>
+            </div>
+
+            <div contenteditable="true" id="displayWorkExperience">
+                <h3>Work Experience</h3>
+                <p></p>
+            </div>
+
+            <div contenteditable="true" id="displaySkills">
+                <h3>Skills</h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
